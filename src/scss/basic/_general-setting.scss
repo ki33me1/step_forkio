@@ -1,0 +1,54 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+
+    @media (max-width:$desk) {
+        max-width: $desk;
+    }
+
+
+    @media (max-width: $tab) {
+        max-width: $tab;
+    }
+
+    @media (max-width: $phone) {
+        max-width: $phone;
+    }
+}
+
+
+h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+
+}
+
+h2 {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 21px;
+}
+
+h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+}

@@ -1,0 +1,13 @@
+@import 'basic/normalize';
+// settings //
+@import 'settings/variables';
+@import 'settings/mixins';
+// basic //
+@import 'basic/normalize';
+@import 'basic/general-setting';
+// components //
+@import 'components/header';
+@import 'components/overview';
+@import 'components/header';
+@import 'components/section2';
+@import 'components/buyOptions';

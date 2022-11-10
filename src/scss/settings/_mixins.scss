@@ -1,0 +1,22 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@mixin trans {
+    transition: all ease-in-out 0.5s;
+    position: relative;
+}
+
+@mixin flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@mixin fz-lh-fw ($fz, $lh, $fw: 400) {
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
