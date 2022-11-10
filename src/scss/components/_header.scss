@@ -1,7 +1,7 @@
 .top-container {
     // width: 62vw;
     height: 889px;
-    background-image: url("/dist/img/background.png");
+    background-image: url("dist/img/background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,7 +25,7 @@
     height: 41px;
 }
 
-.mini-wrapper > h2 {
+.mini-wrapper>h2 {
     font-size: 24px;
     font-weight: 700;
     color: rgba(141, 129, 172, 1);
@@ -166,12 +166,13 @@ li {
     .wrapper {
         justify-content: space-between;
     }
+
     .header-list {
         margin-top: 60px;
         position: absolute;
         justify-content: space-between;
         padding-left: 0;
-            width: 80vw;
+        width: 80vw;
     }
 
     #header-list-item {
@@ -246,7 +247,8 @@ li {
         width: $mob-width;
     }
 
-    .nav-bar, .titles-container {
+    .nav-bar,
+    .titles-container {
         width: $mob-width;
     }
 
