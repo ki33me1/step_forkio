@@ -4,8 +4,14 @@
     padding: 86px 15px 97px;
 
 
-    @media (max-width: 320px) {
-        padding: 86px 0 97px;
+    @media (max-width: $tab) {
+
+        padding: 90px 15px 97px;
+    }
+
+
+    @media (max-width: $phone) {
+        padding: 10px 0 97px;
 
     }
 
@@ -28,6 +34,7 @@
                 font-size: 30px;
                 line-height: 42px;
             }
+
         }
 
     }
@@ -53,6 +60,8 @@
             grid-column-gap: 25px;
             grid-row-gap: 30px;
             margin: 0 30px;
+            padding-top: 31px;
+
         }
     }
 
@@ -145,7 +154,6 @@
     .active-item {
         background-color: #463048;
         mix-blend-mode: normal;
-        opacity: 0.84;
 
         @media (max-width: $tab) {
             max-width: 100%;

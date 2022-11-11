@@ -72,6 +72,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+
+
 }
 
 #line {
@@ -129,7 +131,6 @@
     }
 
 
-
     .main-grid {
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr;
@@ -138,11 +139,24 @@
 
     #content {
         width: 270px;
+
+        font-family: 'Lato';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 10px 0 0 0;
     }
 
     .text {
         width: 70vw;
         padding-top: 20px;
+
+        p {
+            padding-bottom: 15px;
+        }
+
+
         // margin-top: -20px;
         // margin: 100px auto auto auto;
     }
