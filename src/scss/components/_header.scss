@@ -6,7 +6,6 @@
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    // padding: 0 10px;
 }
 
 .wrapper {
@@ -17,6 +16,7 @@
     margin: 0 auto;
     align-items: center;
     max-width: 1200px;
+
 }
 
 .mini-wrapper {
@@ -60,13 +60,25 @@ li {
 
     &:last-child {
         padding-right: 48px;
+
+        @media (max-width:$phone) {
+            padding-right: 0;
+        }
+
+        @media (max-width:$tab) {
+            padding-right: 0;
+        }
     }
+
+
+
+
 
 }
 
 #btn-purchase {
-    width: 105px;
-    padding: 11px 35px;
+    width: 145px;
+    padding: 11px 20px;
     color: white;
     background-color: rgba(141, 129, 172, 1);
     border-radius: 40px;
@@ -80,7 +92,7 @@ li {
 }
 
 .titles-container {
-    width: 60vw;
+    // width: 60vw;
     text-align: center;
     margin: auto;
 }
@@ -88,10 +100,10 @@ li {
 .titles {
     display: flex;
     flex-direction: column;
-    align-items: center;
     // height: 500px;
     margin-top: 126px;
-
+    margin: 126px 0 auto;
+    // width: 390px;
 }
 
 #main-title {
@@ -107,6 +119,10 @@ li {
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
+
+    @media (max-width:$phone) {
+        text-transform: capitalize;
+    }
 
     color: rgba(141, 129, 172, 1);
 }
@@ -140,6 +156,8 @@ li {
     @media (max-width: $tab) {
         margin-top: 584px;
     }
+
+
 }
 
 #bottom-title {
@@ -160,9 +178,10 @@ li {
 #down-title:hover {
     background-color: white;
     color: rgba(141, 129, 172, 1);
+    cursor: pointer;
 }
 
-@media (max-width: 992px) {
+@media (max-width: $tab) {
     .wrapper {
         justify-content: space-between;
     }
@@ -178,18 +197,25 @@ li {
     #header-list-item {
 
         font-size: 2.1vw;
+
+        &:first-child {
+            padding-left: 90px;
+
+        }
     }
 
     .wrapper {
         background: rgba(39, 38, 42, 1);
         align-items: flex-start;
         padding: 22px 30px 0px 30px;
+        height: 95px;
+
     }
 
     #btn-purchase {
         position: relative;
-        right: -20vw;
-        width: 10vw;
+        right: -28vw;
+        width: 99px;
         font-size: 12px;
     }
 
@@ -202,30 +228,35 @@ li {
     }
 
     #down-title {
-        width: 44vw;
+        // width: 44vw;
         margin: auto;
-        margin-top: 420px;
+        margin-top: 423px;
         padding: 21px 59px;
+    }
+
+    .titles {
+        height: 165px;
     }
 }
 
-@media(max-width: 481px) {
+@media(max-width: $phone) {
     .mini-wrapper>h2 {
         display: none;
     }
 
     .header-list {
-        position: absolute;
+        // position: absolute;
         flex-direction: column;
         width: 290px;
         height: 360px;
         padding: 0 10px;
-        top: -1000px;
-        transition: all ease-in 0.7s;
+        // top: -500px;
+        opacity: 0;
+        // transition: all ease-in 0.7s;
     }
 
     #header-list-item {
-        bottom: 800px;
+        // bottom: 800px;
         padding-top: 30px;
         padding-left: 48px;
         font-size: 26px;
@@ -244,12 +275,6 @@ li {
 
     .top-container {
         height: 718px;
-        width: $mob-width;
-    }
-
-    .nav-bar,
-    .titles-container {
-        width: $mob-width;
     }
 
     #mini-line {
@@ -259,9 +284,11 @@ li {
     }
 
     .wrapper {
-        width: $mob-width;
+        align-items: center;
+
         margin-bottom: 40px;
         height: 70px;
+
     }
 
     #btn-purchase {
@@ -278,6 +305,7 @@ li {
         height: 21px;
         justify-content: space-between;
         align-items: flex-end;
+        padding-bottom: 5px;
     }
 
     #mini-line {
@@ -291,14 +319,15 @@ li {
     }
 
     #main-title {
-        width: 250px;
+        // width: 250px;
         font-size: 48px;
     }
 
     #under-title {
         font-size: 18px;
-        width: 267px;
+        // width: 267px;
         margin: 19px auto 14px auto;
+        padding: 0 30px;
     }
 
     #version-title {
@@ -307,32 +336,36 @@ li {
 
     #down-title {
         font-size: 18px;
-        margin-top: 60px;
-        width: 232px;
-        padding: 13px 29px;
+        // margin-top: 90px;
+        // width: 232px;
+        margin-top: 405px;
+        padding: 13px 16px;
     }
 
-    .active-list {
-        position: absolute;
-        top: 40px;
+    .titles {
+        margin-top: 50px;
     }
 
-    .active:first-child {
-        display: none;
-    }
+}
 
-    .active:nth-child(2) {
-        @include trans;
-        rotate: 405deg;
-        top: 10px;
-        right: 1px;
-    }
+.active-list {
+    opacity: 1;
+}
 
-    .active:last-child {
-        @include trans;
-        rotate: 135deg;
-        bottom: 8px;
-        left: -1px;
-    }
+.active:first-child {
+    display: none;
+}
 
+.active:nth-child(2) {
+    @include trans;
+    rotate: 405deg;
+    top: 10px;
+    right: 1px;
+}
+
+.active:last-child {
+    @include trans;
+    rotate: 135deg;
+    bottom: 8px;
+    left: -1px;
 }

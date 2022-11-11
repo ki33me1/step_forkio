@@ -1,6 +1,6 @@
 #buyOpt {
-    color: white;
-    background: url("../img/buySec.jpg") center/cover no-repeat;
+    color: $white;
+    background: url("../img/Layer\ 2\ 1.jpg") center/cover no-repeat;
     padding: 86px 15px 97px;
 
 
@@ -45,7 +45,7 @@
             grid-template-columns: repeat(2, minmax(48%, 48%));
             grid-column-gap: 25px;
             grid-row-gap: 30px;
-            margin: 0 108px;
+            margin: 0 78px;
         }
 
         @media (max-width: $phone) {
@@ -146,6 +146,10 @@
         background-color: #463048;
         mix-blend-mode: normal;
         opacity: 0.84;
+
+        @media (max-width: $tab) {
+            max-width: 100%;
+        }
     }
 
     .active-item &__item-title {

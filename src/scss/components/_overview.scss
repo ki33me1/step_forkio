@@ -1,101 +1,3 @@
-//  .overview {
-//      background-color: $verylightGray;
-//      margin: 0 auto;
-//      padding: 90px 0 70px;
-
-//      h2 {
-//          margin: 0 0 10px 20px;
-//      }
-
-//      // .overview__items
-
-//      &__items {
-//          display: grid;
-//          grid-template-columns: 50% 50%;
-//          gap: 0px;
-
-//          @media (max-width:$phone) {
-//              grid-template-columns: 100%;
-
-
-//          }
-//      }
-
-//      // .overview__list
-
-//      //  &__list {}
-
-
-
-//      // .overview__item
-
-//      &__item {
-//          display: grid;
-//          grid-template-columns: 1fr 7fr;
-//          grid-template-rows: 1fr;
-
-
-//      }
-
-//      // .overview__item-img
-
-//      &__item-img {
-//          width: 141px;
-//      }
-
-//      // .overview__item-text
-
-//      &__item-text {
-//          h3 {
-//              margin: 0;
-//          }
-
-//          p {
-//              font-family: 'Montserrat';
-//              font-style: normal;
-//              font-weight: 400;
-//              font-size: 14px;
-//              line-height: 21px;
-//              color: #848E97;
-
-//          }
-//      }
-
-//      // .overview__editor
-
-//      &__editor {
-//          color: #8D81AC;
-//          padding-left: 20px;
-
-//      }
-
-//      // .overview__editor-item
-
-//      &__editor-item {
-
-
-//          display: flex;
-//          flex-direction: column;
-
-//          h2 {
-//              color: #8D81AC;
-//          }
-
-//          img {
-//              width: 100%;
-//          }
-//      }
-
-//      //  // .overview__editor-item-title
-
-//      //  &__editor-item-title {}
-
-//      //  // .overview__editor-item-img
-
-//      //  &__editor-item-img {}
-
-//  }
-
 .overview {
 
     .overview-header {
@@ -139,7 +41,6 @@
             font-weight: 400;
             font-size: 21px;
             line-height: 32px;
-            width: 880px;
             margin: 0 auto;
             color: #323232;
             // padding: 3.5rem 0 1.5rem 0;
@@ -209,6 +110,15 @@
             font-weight: 700;
             font-size: 48px;
             line-height: 50px;
+
+            @media (max-width:$phone) {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
         }
 
         &__banner {
@@ -234,12 +144,6 @@
                 font-weight: 700;
                 font-size: 42px;
                 line-height: 42px;
-            }
-
-            & p {
-
-                width: 690px;
-
             }
 
         }
@@ -286,7 +190,8 @@
         .overview-header {
 
             & h2 {
-
+                font-family: 'Montserrat';
+                font-style: normal;
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 28px;
@@ -295,7 +200,8 @@
             }
 
             & p {
-
+                font-family: 'Lato';
+                font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 20px;
@@ -306,16 +212,11 @@
 
         .overview-advantages {
 
-
-
             &__item {
                 flex-wrap: wrap;
                 // width: 320px;
 
             }
-
-
-
 
             &__image {
                 width: 100%;
@@ -325,20 +226,6 @@
                     display: block;
                     margin: 0 auto;
                 }
-            }
-
-            &__title {
-                order: 1;
-                text-align: center;
-                padding: 0 45px 36px;
-                width: 300px;
-
-
-                font-weight: 700;
-                font-size: 35px;
-                line-height: 38px;
-
-
             }
 
             &__text {
@@ -352,12 +239,12 @@
 
             &__banner {
                 position: relative;
-                min-height: 380px;
+                min-height: 370px;
 
                 img {
                     min-width: $phone;
+                    padding: 0 0 0 5%;
                     position: absolute;
-                    padding-left: 10px;
                     top: 0;
                     left: 0;
                     right: 0;
